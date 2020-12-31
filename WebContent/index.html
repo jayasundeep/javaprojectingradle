@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Todo List</title>
+</head>
+
+    <body>
+
+    <h1>Add New item</h1>
+    <form action="additem" method="post">
+        <table>
+            <tr>
+                <td>Task to do:</td>
+                <td><input type="text" name="task"/></td>
+            </tr>
+            <tr>
+                <td>Status:</td>
+                <td>
+                    <select name="status" style="width:150px">
+                        <option>Pending</option>
+                        <option>In progress</option>
+                        <option>Completed</option>
+                        <option>Deffered</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Priority:</td>
+                <td>
+                    <select name="priority" style="width:150px">
+                        <option>Important - not Urgent</option>
+                        <option>not Important - not Urgent</option>
+                        <option>Important - Urgent</option>
+                        <option>not Important - Urgent</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><td colspan="2"><input type="submit" value="Save Task"/></td></tr>
+        </table>
+    </form>
+
+    <br/>
+    <a href="alltasks">view all tasks</a>
+
+    </body>
+</html>
